@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiGatewayURL: 'https://backend.hardikdevops.shop'
+  apiGatewayURL: 'http://localhost:3000'
 };
 
 /*
