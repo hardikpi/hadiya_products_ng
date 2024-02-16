@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiGatewayURL: 'https://ec2backend.hardikdevops.shop'
+  apiGatewayURL: 'https://backend.hardikdevops.shop'
 };
 
 /*
