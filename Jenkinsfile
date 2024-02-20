@@ -2,19 +2,6 @@ pipeline {
     agent any
     
     stages {
-        stage('Checkout') {
-            steps {
-                // Checkout code from GitHub repository
-                checkout([$class: 'GitSCM', 
-                          branches: [[name: '*/master']], 
-                          doGenerateSubmoduleConfigurations: false, 
-                          extensions: [[$class: 'RelativeTargetDirectory', 
-                                        relativeTargetDir: '']], 
-                          submoduleCfg: [], 
-                          userRemoteConfigs: [[url: 'https://github.com/hardikpi/hadiya_products_ng.git']]])
-            }
-        }
-
         stage('Build') {
             steps {
                 // Add build steps here
